@@ -1,8 +1,12 @@
-0. Commands which are not familiar or understand first search with that command ... what does it do???????
+0. Commands which are not familiar or understand first search with that command ... what does it do??????? Specially delete / remove commads ***rm***
 
 1. Show list of all files and folders
   ls -al
 
 2. To move all the files and folders inside old directory or the directory created as like old directory
   mv * !(old) old
+
+3. zip all files and folders inside a directory.... specially if i am inside the directory then, 
+
+  zip -r backup.zip ./*
 
