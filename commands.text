@@ -1,4 +1,8 @@
+0. Commands which are not familiar or understand first search with that command ... what does it do???????
+
 1. Show list of all files and folders
   ls -al
 
-2. 
+2. To move all the files and folders inside old directory or the directory created as like old directory
+  mv * !(old) old
+
