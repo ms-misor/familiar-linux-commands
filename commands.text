@@ -1,4 +1,4 @@
-0. Commands which are not familiar or understand first search with that command ... what does it do??????? Specially delete / remove commads ***rm***
+0. Commands which are not familiar or understand first search with that command ... what does it do??????? Specially delete / remove / move commads ***rm*** , ***mv***
 
 1. Show list of all files and folders
   ls -al
@@ -9,4 +9,8 @@
 3. zip all files and folders inside a directory.... specially if i am inside the directory then, 
 
   zip -r backup.zip ./*
+
+4. To move a zip file to another folder example: old folder
+
+  mv backup_till_01_09_2024.zip old/
 
