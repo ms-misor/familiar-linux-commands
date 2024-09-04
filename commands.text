@@ -4,7 +4,13 @@
   ls -al
 
 2. To move all the files and folders inside old directory or the directory created as like old directory
+
   mv * !(old) old
+
+  For all hidden files to move inside old folder except old folder
+
+  shopt -s extglob dotglob
+  mv -- !(old) old/
 
 3. zip all files and folders inside a directory.... specially if i am inside the directory then, 
 
