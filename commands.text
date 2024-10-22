@@ -16,7 +16,14 @@
 
   zip -r backup.zip ./*
 
+  To Zip html folder...*************
+
+  zip -r html.zip html/
+
 4. To move a zip file to another folder example: old folder
 
   mv backup_till_01_09_2024.zip old/
 
+5. To check the size of a folder in Linux, use the following command:
+
+ du -sh /path/to/folder
