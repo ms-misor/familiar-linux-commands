@@ -27,3 +27,7 @@
 5. To check the size of a folder in Linux, use the following command:
 
  du -sh /path/to/folder
+
+6. To remove everything inside a directory in Linux, you can use the following command:
+
+ rm -rf /path/to/directory/*
