@@ -1,7 +1,10 @@
 0. Commands which are not familiar or understand first search with that command ... what does it do??????? Specially delete / remove / move commads ***rm*** , ***mv***
 
-1. Show list of all files and folders
+1. Show list of all files and folders and status, restart
+
   ls -al
+  sudo system restart apache2
+  sudo system status apache2
 
 2. To move all the files and folders inside old directory or the directory created as like old directory
 
