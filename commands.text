@@ -3,8 +3,8 @@
 1. Show list of all files and folders and status, restart
 
   ls -al
-  sudo system restart apache2
-  sudo system status apache2
+  sudo systemctl restart apache2
+  sudo systemctl status apache2
 
 2. To move all the files and folders inside old directory or the directory created as like old directory
 
