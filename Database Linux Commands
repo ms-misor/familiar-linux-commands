@@ -1,0 +1,15 @@
+To import......
+mysql -u doadmin -p -h 192.168.1.106 -P 25060 beta_uniwallet<cuminmall_uniwallet.sql;
+
+For importing database locally....
+
+mysql -u misor -p cuminmall_uniwallet < /var/www/html/clients/cuminmall_db_part2.sql;
+
+
+To export with procedures, funcitons......
+
+mysqldump -u remote -p -h 192.168.1.106 -P 3306 --routines --triggers 26novrespos_accv2 > 26novrespos_accv2.sql
+
+To import normally......
+
+mysql -u doadmin -p -h 192.168.1.106 -P 25060 beta_uniwallet
