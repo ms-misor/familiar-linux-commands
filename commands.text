@@ -34,3 +34,7 @@
 6. To remove everything inside a directory in Linux, you can use the following command:
 
   rm -rf temp/*
+  
+7. To remove large size directory, successfully delelted over 4GB data... took time but sucessfully worked
+
+  sudo ionice -c 3 rm -rf temp___/
