@@ -8,7 +8,13 @@
 
   or
 
+  --- To RUN cronjob every 5 minutes ---
+
   */5 * * * * curl -s -o /dev/null "http://128.199.194.117/test.php"
+
+  --- To RUN cronjob every 12 hours ---
+
+  0 */12 * * * curl -s -o /dev/null "http://128.199.194.117/test.php"
 
 3. Verify the Cron Job
 
