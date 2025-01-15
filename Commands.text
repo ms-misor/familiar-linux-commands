@@ -38,3 +38,7 @@
 7. To remove large size directory, successfully delelted over 4GB data... took time but sucessfully worked
 
   sudo ionice -c 3 rm -rf temp___/
+
+8. To check SPACES and usage of RAM of linux server..
+
+   df -h
