@@ -23,6 +23,10 @@
 
   zip -r html.zip html/
 
+  To Zip all files and folders inside a directory. except as mentioned...*************
+  
+  zip -r backup_old_till_25th_jan_2024.zip ./* --exclude 'backup.zip' 'old/*'
+
 4. To move a zip file to another folder example: old folder
 
   mv backup_till_01_09_2024.zip old/
