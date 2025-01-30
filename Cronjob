@@ -10,15 +10,15 @@
 
   --- To RUN cronjob every 5 MINUTES ---
 
-  */5 * * * * curl -s -o /dev/null "http://128.199.194.117/test.php"
+  */5 * * * * curl -s -o /dev/null "http://100.100.100.100/test.php"
 
   --- To RUN cronjob every 12 HOURS ---
 
-  0 */12 * * * curl -s -o /dev/null "http://128.199.194.117/test.php"
+  0 */12 * * * curl -s -o /dev/null "http://100.100.100.100/test.php"
 
   --- To RUN cronjob EVERY day ---
 
-  0 0 * * * curl -s -o /dev/null "http://159.223.56.253/clean_cache_data.php"
+  0 0 * * * curl -s -o /dev/null "http://100.100.100.100/clean_cache_data.php"
 
 3. Verify the Cron Job
 
