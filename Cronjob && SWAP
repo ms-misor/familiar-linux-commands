@@ -38,3 +38,7 @@
   */5 * * * * php /var/www/html/test.php >> /var/log/test_cron.log 2>&1
 
    cat /var/log/test_cron.log
+
+7. One-Line Command to Restart Swap
+
+  sudo swapoff -a && sudo rm -f /swapfile && sudo fallocate -l 1G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile && free -h
