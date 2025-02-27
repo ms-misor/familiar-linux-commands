@@ -54,7 +54,7 @@ while (true) {
         }
 
         // Handle communication with clients
-        foreach ($clients as $client) {
+        foreach ($clients as $key => $client) {
             if (in_array($client, $read)) {
                 $data = socket_read($client, 1024);
                 if ($data) {
@@ -73,11 +73,20 @@ while (true) {
                     }
                 } else {
                     // Remove client if the connection is closed
-                    unset($clients[array_search($client, $clients)]);
+                    unset($clients[$key]);
                     socket_close($client);
                     echo "Client disconnected\n";
                 }
             }
+        }
+    }
+
+    // Remove any closed connections from the list
+    foreach ($clients as $key => $connection) {
+        if (!socket_getpeername($connection, $address)) {
+            unset($clients[$key]);
+            socket_close($connection);
+            echo "Connection closed and removed from the list\n";
         }
     }
 
