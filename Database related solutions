@@ -1,0 +1,20 @@
+when importing sql in phpmyamdin the file size exceeding
+
+Method 1: Increase phpMyAdmin Upload Limit
+
+        1. Edit php.ini
+        
+        Find and edit the PHP configuration file:
+        
+        sudo nano /etc/php/8.1/apache2/php.ini
+        
+        
+        (Replace 8.1 with your PHP version if different.)
+        
+        Find and update these values:
+        
+        upload_max_filesize = 512M
+        post_max_size = 512M
+        memory_limit = 1024M
+        max_execution_time = 300
+        max_input_time = 300
