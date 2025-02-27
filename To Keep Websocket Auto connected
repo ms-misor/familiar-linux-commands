@@ -38,3 +38,10 @@ sudo systemctl restart websocket_server.service
 sudo systemctl status websocket_server.service
 
 
+
+3. Verify the Port Is Released
+Once you've killed the process, verify that the port is free and no longer in use:
+
+sudo lsof -i :60000
+
+
