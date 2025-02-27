@@ -1,0 +1,40 @@
+Modify the Service File to Keep the Process Running: You can use Restart=always in the systemd service configuration, but also set ExecStartPre to ensure the service does not exit immediately. Here's how you can tweak the service file:
+
+
+sudo nano /etc/systemd/system/websocket_server.service
+
+
+##### Below script will put in the websocket_server.service file ##################
+
+
+
+[Unit]
+Description=PHP WebSocket Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/php /var/www/html/websocket_server.php
+Restart=always
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html
+StandardOutput=syslog
+StandardError=syslog
+RestartSec=10
+ExecStartPre=/bin/sleep 10
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+#####After thar ##########
+
+sudo systemctl daemon-reload
+sudo systemctl restart websocket_server.service
+
+
+sudo systemctl status websocket_server.service
+
+
