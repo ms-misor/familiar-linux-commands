@@ -6,7 +6,7 @@ Method 1: Increase phpMyAdmin Upload Limit
         
         Find and edit the PHP configuration file:
         
-        sudo nano /etc/php/8.1/apache2/php.ini
+                sudo nano /etc/php/8.1/apache2/php.ini
         
         
         (Replace 8.1 with your PHP version if different.)
@@ -18,3 +18,8 @@ Method 1: Increase phpMyAdmin Upload Limit
         memory_limit = 1024M
         max_execution_time = 300
         max_input_time = 300
+
+2. Restart Apache
+        Apply the changes:
+
+                sudo systemctl restart apache2
