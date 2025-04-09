@@ -2,6 +2,9 @@
 
 mysql -u doadmin -p -h 192.168.1.106 -P 25060 beta_uniwallet<cuminmall_uniwallet.sql;
 
+// To download databse from the same server where loggedin to the directory 
+mysqldump -u root -p --routines --triggers 26novrespos_accv2 > /var/www/26novrespos_accv2_last.sql;
+
 2) For importing database locally....
 
 mysql -u misor -p cuminmall_uniwallet < /var/www/html/clients/cuminmall_db_part2.sql;
