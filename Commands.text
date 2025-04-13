@@ -1,7 +1,6 @@
 0. Commands which are not familiar or understand first search with that command ... what does it do??????? Specially delete / remove / move commads ***rm*** , ***mv***
 
 1. Show list of all files and folders and status, restart
-
   ls -al
   sudo systemctl restart apache2
   sudo systemctl status apache2
@@ -26,6 +25,11 @@
   To Zip all files and folders inside a directory. except as mentioned...*************
   
   zip -r backup_old_till_25th_jan_2024.zip ./* --exclude 'backup.zip' 'old/*'
+
+  OR
+  you can zip everything inside the html directory except restorapos_accv_till_11march_2025.zip using the zip command with the -x (exclude) option.
+  
+  zip -r html_backup.zip html/* -x html/restorapos_accv_till_11march_2025.zip
 
 4. To move a zip file to another folder example: old folder
 
