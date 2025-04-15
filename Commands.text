@@ -14,7 +14,7 @@
   shopt -s extglob dotglob
   mv -- !(old) old/
 
-3. zip all files and folders inside a directory.... specially if i am inside the directory then, 
+3. ZIP all files and folders inside a directory.... specially if i am inside the directory then, 
 
   zip -r backup.zip ./*
 
@@ -27,9 +27,12 @@
   zip -r backup_old_till_25th_jan_2024.zip ./* --exclude 'backup.zip' 'old/*'
 
   OR
+  
   you can zip everything inside the html directory except restorapos_accv_till_11march_2025.zip using the zip command with the -x (exclude) option.
   
   zip -r html_backup.zip html/* -x html/restorapos_accv_till_11march_2025.zip
+  OR
+  zip -r html_backup.zip html/* -x html/restorapos_main_accv_till_9jan_2024.zip -x html/old/\*
 
 4. To move a zip file to another folder example: old folder
 
