@@ -31,8 +31,13 @@
   you can zip everything inside the html directory except restorapos_accv_till_11march_2025.zip using the zip command with the -x (exclude) option.
   
   zip -r html_backup.zip html/* -x html/restorapos_accv_till_11march_2025.zip
+  
   OR
-  zip -r html_backup.zip html/* -x html/restorapos_main_accv_till_9jan_2024.zip -x html/old/\*
+  
+  zip -r html_backup.zip html/* \
+  -x html/restorapos_main_till_03rd_September_2024.zip \
+  -x html/old/* \
+  -x html/idealpos.zip
 
 4. To move a zip file to another folder example: old folder
 
