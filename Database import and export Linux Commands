@@ -1,6 +1,6 @@
 1) To import......
 
-mysql -u doadmin -p -h 192.168.1.106 -P 25060 beta_uniwallet<cuminmall_uniwallet.sql;
+mysql -u remote -p -h 192.168.1.106 -P 3306 rnd_26respos_accv2</var/www/html/clients/26novrespos_accv2.sql;
 
 // To download / export databse from the same server where loggedin to the directory 
 mysqldump -u root -p --routines --triggers restaurantproject_up > /var/www/restaurantproject_up.sql;
