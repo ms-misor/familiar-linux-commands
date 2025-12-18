@@ -1,0 +1,9 @@
+To run Database Seeder...Example 
+
+For all Seeder run at a time -------------
+
+php artisan db:seed
+
+For particular Seeder run  -------------
+
+php artisan db:seed --class=PermissionsSeeder
