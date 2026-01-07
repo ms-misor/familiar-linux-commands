@@ -1,9 +1,34 @@
-To run Database Seeder...Example 
+1. Command to run seeder
 
 For all Seeder run at a time -------------
 
 php artisan db:seed
 
-For particular Seeder run  -------------
+Particular seeder Run
 
 php artisan db:seed --class=PermissionsSeeder
+
+
+2. command to create migration file
+
+php artisan make:migration create_employees_table --create=employees
+
+
+3. Command to create model
+
+php artisan make:model Department
+
+
+4. Command to create controller as resource
+
+php artisan make:controller DepartmentController --resource
+
+
+5. BEST PRACTICE (Model + Controller together)
+
+php artisan make:model DocumentType -c -r
+
+
+6. (Optional but Recommended) Add Model Options ---- If you want migration + factory + seeder too:
+
+php artisan make:model Department -m -f -s -c -r
