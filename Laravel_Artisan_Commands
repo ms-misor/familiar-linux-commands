@@ -32,3 +32,7 @@ php artisan make:model DocumentType -c -r
 6. (Optional but Recommended) Add Model Options ---- If you want migration + factory + seeder too:
 
 php artisan make:model Department -m -f -s -c -r
+
+7. Cusotm Artisan command to validate all translation keys across languages**************************
+
+php artisan translations:check
